@@ -209,7 +209,7 @@
                     <navigationItem key="navigationItem" title="Select User" id="unC-HW-Z37">
                         <barButtonItem key="rightBarButtonItem" title="New" id="4xc-fD-w3f">
                             <connections>
-                                <segue destination="uKT-5E-Ipo" kind="push" id="BXO-ql-N60"/>
+                                <segue destination="uKT-5E-Ipo" kind="show" id="BXO-ql-N60"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
