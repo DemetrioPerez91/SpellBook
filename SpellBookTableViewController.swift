@@ -14,7 +14,9 @@ class SpellBookTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        spellList = RealmManager.instance.getUserSpells((DataManager.instance.currentUser?.user)!)
+        if let user = DataManager.instance.currentUser?.user{
+            spellList = RealmManager.instance.getUserSpells(user)
+        }
 
         tableView.reloadData()
         

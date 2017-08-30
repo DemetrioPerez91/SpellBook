@@ -41,8 +41,9 @@ class SpellListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let spell = DataManager.instance.spellList[indexPath.row]
-        let user = DataManager.instance.currentUser
-        RealmManager.instance.addUserSpell(spell.spell, (user?.user)!)
+        if let user = DataManager.instance.currentUser?.user{
+            RealmManager.instance.addUserSpell(spell.spell, user)
+        }
         
     }
     
