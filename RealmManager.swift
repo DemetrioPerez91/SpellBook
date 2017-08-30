@@ -76,4 +76,16 @@ class RealmManager: NSObject
         }
     }
     
+    func removeSpellFromBook(_ index:Int)
+    {
+        if let user = DataManager.instance.currentUser?.user
+        {
+            let realm = try! Realm()
+            try! realm.write
+                {
+                    user.spells.remove(objectAtIndex: index)
+            }
+        }
+    }
+    
 }

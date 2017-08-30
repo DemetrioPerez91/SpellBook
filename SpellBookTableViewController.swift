@@ -46,5 +46,17 @@ class SpellBookTableViewController: UITableViewController {
         cell?.detailTextLabel?.text = spell.spellSchool
         return cell!
     }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete
+        {
+            RealmManager.instance.removeSpellFromBook(indexPath.row)
+            spellList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
 
 }
