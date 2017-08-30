@@ -29,7 +29,7 @@ enum SchoolEnum:Int
         case .Abju : return "Abjuration"
         case .Illu   : return "Illusion"
         case .Encha  : return "Enchantment"
-        case .Divi : return "Divinatio"
+        case .Divi : return "Divination"
         }
     }
 }
