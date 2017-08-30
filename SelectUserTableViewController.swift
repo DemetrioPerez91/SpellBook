@@ -54,3 +54,12 @@ class SelectUserTableViewController: UITableViewController {
    
 
 }
+
+extension SelectUserTableViewController:RefreshTableProtocol
+{
+    func refresh() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}

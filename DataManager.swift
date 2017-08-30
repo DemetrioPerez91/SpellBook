@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol RefreshTableProtocol {
+    func refresh()
+}
+
 class DataManager: NSObject
 {
     static let instance = DataManager()
@@ -16,6 +20,7 @@ class DataManager: NSObject
     var spellList:[SpellVM] = []
     var userList:[UserVM] = []
     var currentUser:UserVM?
+    var refreshDelegate:RefreshTableProtocol?
     
     func loadSpells()
     {
@@ -23,7 +28,11 @@ class DataManager: NSObject
     }
     func loadUsers()
     {
-        userList = RealmManager.instance.getUsers()
+        RealmManager.instance.getUsers(completion: {
+            users in
+            self.userList = users
+            self.refreshDelegate?.refresh()
+        })
     }
     
 }

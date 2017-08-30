@@ -32,13 +32,18 @@ class RealmManager: NSObject
         return result
     }
     
-    func getUsers()->[UserVM]
+    func getUsers(completion:@escaping ([UserVM])->())
     {
         var result:[UserVM] = []
-        let realm = try! Realm()
-        let users = realm.objects(User.self)
-        for user in users { result.append(UserVM(user: user))}
-        return result
+        
+            let realm = try! Realm()
+            let users = realm.objects(User.self)
+            for user in users { result.append(UserVM(user: user))}
+            completion(result)
+        
+        
+        
+        
     }
     
     func getUserSpells(_ user:User)->[SpellVM]
