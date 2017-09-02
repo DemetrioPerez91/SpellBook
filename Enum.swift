@@ -38,12 +38,12 @@ enum SchoolEnum:Int
 
 enum SchoolEnumS: String {
    
-    case Necro = "Necromancy"
-    case Evo =  "Evocation"
-    case Conju = "Conjuration"
-    case Abju =  "Abjuration"
-    case Illu =  "Illusion"
-    case Encha = "Enchantment"
-    case Divi = "Divination"
+    case Necromancy = "Necromancy"
+    case Evocation =  "Evocation"
+    case Conjuration = "Conjuration"
+    case Abjuration =  "Abjuration"
+    case Illusion =  "Illusion"
+    case Enchantment = "Enchantment"
+    case Divination = "Divination"
     
 }

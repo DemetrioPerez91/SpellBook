@@ -59,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cast Spell" id="GlM-AP-Tqf"/>
                     <connections>
+                        <outlet property="SPELLvIEW" destination="XHh-0I-YEx" id="lhL-1G-We9"/>
                         <outlet property="gestureRecognizer" destination="81E-aN-9O8" id="waw-ro-3wn"/>
                     </connections>
                 </viewController>
