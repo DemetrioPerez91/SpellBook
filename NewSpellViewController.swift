@@ -26,6 +26,8 @@ class NewSpellViewController: UIViewController {
         componentSegment.delegate = self
         schoolPicker.delegate = self
         schoolPicker.dataSource = self
+        schoolOfMagic = SchoolEnumS.Necromancy.rawValue
+        
     }
 
     @IBAction func CreateSpell(_ sender: Any)
