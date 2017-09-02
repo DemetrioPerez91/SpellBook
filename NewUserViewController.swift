@@ -29,6 +29,7 @@ class NewUserViewController: UIViewController {
         let newUser = User()
         newUser.name = userNAME.text!
         RealmManager.instance.saveUser(newUser)
+        showToast(message: "User \(newUser.name) saved")
         _ = navigationController?.popViewController(animated: true)
     }
    

@@ -14,7 +14,7 @@
         <!--Cast Spell-->
         <scene sceneID="3W5-87-sVv">
             <objects>
-                <viewController id="KkW-zw-Ad8" sceneMemberID="viewController">
+                <viewController id="KkW-zw-Ad8" customClass="CastSpellViewController" customModule="Spellbook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EkI-1Y-kIm"/>
                         <viewControllerLayoutGuide type="bottom" id="NsT-t0-Jmn"/>
@@ -224,7 +224,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="SpellBook" id="5eV-Qs-cU5"/>
                     <connections>
-                        <segue destination="KkW-zw-Ad8" kind="show" id="kIr-p5-jDm"/>
+                        <segue destination="KkW-zw-Ad8" kind="show" identifier="CastSpellSegue" id="kIr-p5-jDm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfk-Z4-VG6" userLabel="First Responder" sceneMemberID="firstResponder"/>

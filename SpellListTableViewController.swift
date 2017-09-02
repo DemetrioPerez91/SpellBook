@@ -44,6 +44,11 @@ class SpellListTableViewController: UITableViewController {
         let spell = DataManager.instance.spellList[indexPath.row]
         if let user = DataManager.instance.currentUser?.user{
             RealmManager.instance.addUserSpell(spell.spell, user)
+            showToast(message: "Added \(spell.spell.name)")
+        }
+        else
+        {
+            showToast(message: "Please select a User")
         }
         
     }

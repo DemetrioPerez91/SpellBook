@@ -46,6 +46,7 @@ class NewSpellViewController: UIViewController {
         spell.school = schoolOfMagic
         
         RealmManager.instance.saveSpell(spell: spell)
+        showToast(message: "Spell Added")
         _ = navigationController?.popViewController(animated: true)
         
     }

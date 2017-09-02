@@ -11,6 +11,7 @@ import UIKit
 class SpellBookTableViewController: UITableViewController {
 
     var spellList:[SpellVM] = []
+    var selectedSpell:SpellVM?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,20 @@ class SpellBookTableViewController: UITableViewController {
             spellList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CastSpellSegue"
+        {
+            //SET SPELL NAME FOR THE VIEW
+            let vc = segue.destination as! CastSpellViewController
+            vc.spell = selectedSpell?.spell
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedSpell = spellList[indexPath.row]
+        performSegue(withIdentifier: "CastSpellSegue", sender: nil)
     }
     
 
