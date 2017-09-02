@@ -12,10 +12,12 @@ class CastSpellViewController: UIViewController {
 
     var spell:Spell?
     
+    @IBOutlet var gestureRecognizer: UISwipeGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        gestureRecognizer.direction = .up
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +32,19 @@ class CastSpellViewController: UIViewController {
         {
             showToast(message: "You casted: \(sp.name)")
         }
+    }
+    
+    
+    
+    @IBAction func swipeHandler(_ sender: Any)
+    {
+        castSpell()
+    }
+    
+    func changeViewColor()
+    {
+        let school = SchoolEnumS(rawValue: (spell?.school)!)
         
     }
+    
 }

@@ -33,3 +33,17 @@ enum SchoolEnum:Int
         }
     }
 }
+
+
+
+enum SchoolEnumS: String {
+   
+    case Necro = "Necromancy"
+    case Evo =  "Evocation"
+    case Conju = "Conjuration"
+    case Abju =  "Abjuration"
+    case Illu =  "Illusion"
+    case Encha = "Enchantment"
+    case Divi = "Divination"
+    
+}

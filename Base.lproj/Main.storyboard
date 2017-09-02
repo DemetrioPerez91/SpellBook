@@ -29,12 +29,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHh-0I-YEx">
                                 <rect key="frame" x="19" y="180.5" width="337.5" height="439"/>
                                 <color key="backgroundColor" red="0.99765625000000002" green="0.94623341754770429" blue="0.84487302640727946" alpha="0.63009159482758625" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="439" id="NYN-eV-P9q"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="81E-aN-9O8" appends="YES" id="24f-cs-taR"/>
+                                </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw a circle with your finger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-pt-dKu">
-                                <rect key="frame" x="39.5" y="119.5" width="296.5" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIPE UP TO CAST THE SPELL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-pt-dKu">
+                                <rect key="frame" x="24" y="119.5" width="327" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,8 +58,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cast Spell" id="GlM-AP-Tqf"/>
+                    <connections>
+                        <outlet property="gestureRecognizer" destination="81E-aN-9O8" id="waw-ro-3wn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50c-Np-qY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="81E-aN-9O8">
+                    <connections>
+                        <action selector="swipeHandler:" destination="KkW-zw-Ad8" id="T0Q-Lc-BGp"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1440.8" y="330.58470764617692"/>
         </scene>
