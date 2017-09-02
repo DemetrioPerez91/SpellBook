@@ -13,6 +13,7 @@ class SpellListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DataManager.instance.loadSpells()
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "Papyrus"))
     }
 
     override func viewWillAppear(_ animated: Bool) {

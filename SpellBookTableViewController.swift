@@ -17,7 +17,7 @@ class SpellBookTableViewController: UITableViewController {
         if let user = DataManager.instance.currentUser?.user{
             spellList = RealmManager.instance.getUserSpells(user)
         }
-
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "Papyrus"))
         tableView.reloadData()
         
     }

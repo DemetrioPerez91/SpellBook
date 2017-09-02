@@ -12,7 +12,7 @@ class MainMenuTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "Papyrus"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,17 +32,17 @@ class MainMenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if let user = DataManager.instance.currentUser?.user
         {
-            return "User \(user.name)"
+            return "User: \(user.name)"
         }
         else
         {
-            return "Select User"
+            return "User not selected"
         }
         
     }

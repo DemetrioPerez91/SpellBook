@@ -11,6 +11,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Cast Spell-->
+        <scene sceneID="3W5-87-sVv">
+            <objects>
+                <viewController id="KkW-zw-Ad8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EkI-1Y-kIm"/>
+                        <viewControllerLayoutGuide type="bottom" id="NsT-t0-Jmn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c6g-N3-701">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="nsi-K4-esB">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHh-0I-YEx">
+                                <rect key="frame" x="19" y="180.5" width="337.5" height="439"/>
+                                <color key="backgroundColor" red="0.99765625000000002" green="0.94623341754770429" blue="0.84487302640727946" alpha="0.63009159482758625" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="439" id="NYN-eV-P9q"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw a circle with your finger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-pt-dKu">
+                                <rect key="frame" x="39.5" y="119.5" width="296.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XHh-0I-YEx" firstAttribute="centerY" secondItem="c6g-N3-701" secondAttribute="centerY" multiplier="1.2" id="8Hx-Zb-MMm"/>
+                            <constraint firstItem="nsi-K4-esB" firstAttribute="centerX" secondItem="c6g-N3-701" secondAttribute="centerX" id="B5F-tU-MsX"/>
+                            <constraint firstItem="XHh-0I-YEx" firstAttribute="centerX" secondItem="c6g-N3-701" secondAttribute="centerX" id="Rcc-MW-Mdf"/>
+                            <constraint firstItem="XHh-0I-YEx" firstAttribute="width" secondItem="c6g-N3-701" secondAttribute="width" multiplier="0.9" id="ZRo-cM-hbA"/>
+                            <constraint firstItem="TTk-pt-dKu" firstAttribute="centerX" secondItem="c6g-N3-701" secondAttribute="centerX" id="b80-8X-0gn"/>
+                            <constraint firstItem="nsi-K4-esB" firstAttribute="centerY" secondItem="c6g-N3-701" secondAttribute="centerY" id="ca7-Uh-M6O"/>
+                            <constraint firstItem="nsi-K4-esB" firstAttribute="width" secondItem="c6g-N3-701" secondAttribute="width" id="eSR-OD-f2k"/>
+                            <constraint firstItem="TTk-pt-dKu" firstAttribute="centerY" secondItem="c6g-N3-701" secondAttribute="centerY" multiplier="0.4" id="kay-3e-mhn"/>
+                            <constraint firstItem="nsi-K4-esB" firstAttribute="height" secondItem="c6g-N3-701" secondAttribute="height" id="zhl-Mn-ePp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cast Spell" id="GlM-AP-Tqf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50c-Np-qY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440.8" y="330.58470764617692"/>
+        </scene>
         <!--Spellbook-->
         <scene sceneID="8sx-L2-sXy">
             <objects>
@@ -27,6 +75,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.59905849359999996" green="0.57833321790000003" blue="0.29565972550000003" alpha="0.15668103450000001" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -44,7 +93,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocn-MN-zlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="1100"/>
+            <point key="canvasLocation" x="638" y="1091"/>
         </scene>
         <!--MainMenu-->
         <scene sceneID="whK-q4-orw">
@@ -78,6 +127,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="xMA-E3-S3d" secondAttribute="trailing" id="v6J-IG-bXj"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.59905849358974361" green="0.57833321790489267" blue="0.29565972550030817" alpha="0.15668103448275861" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="DbC-dt-1hA" kind="show" id="Pdm-7c-3II"/>
                                         </connections>
@@ -103,6 +153,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="2XB-y0-ti3" secondAttribute="trailing" id="z4J-EN-eu1"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.59905849359999996" green="0.57833321790000003" blue="0.29565972550000003" alpha="0.15668103450000001" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="ceP-Rl-0NV" kind="show" id="duC-po-oJb"/>
                                         </connections>
@@ -128,17 +179,10 @@
                                                 <constraint firstItem="KnJ-Os-RMa" firstAttribute="top" secondItem="8Yb-yk-CBj" secondAttribute="topMargin" id="Q0s-Ie-RBg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.59905849359999996" green="0.57833321790000003" blue="0.29565972550000003" alpha="0.15668103450000001" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="7sT-NG-gZ8" kind="show" id="Erv-Mp-RnY"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gX0-ZM-fCC">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gX0-ZM-fCC" id="esm-bF-02o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -152,7 +196,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="siM-hU-Lac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="331"/>
+            <point key="canvasLocation" x="-132" y="330.58470764617692"/>
         </scene>
         <!--SpellBook-->
         <scene sceneID="Ae7-Hd-O2o">
@@ -170,6 +214,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.59905849359999996" green="0.57833321790000003" blue="0.29565972550000003" alpha="0.15668103450000001" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -178,6 +223,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="SpellBook" id="5eV-Qs-cU5"/>
+                    <connections>
+                        <segue destination="KkW-zw-Ad8" kind="show" id="kIr-p5-jDm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfk-Z4-VG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,6 +247,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.59905849359999996" green="0.57833321790000003" blue="0.29565972550000003" alpha="0.15668103450000001" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -301,8 +350,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gray-brick-background-bricks-as-wall-40204307" translatesAutoresizingMaskIntoConstraints="NO" id="ACE-0b-Kk2">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="ACE-0b-Kk2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="vir-5p-Atx">
                                 <rect key="frame" x="16" y="64" width="343" height="581"/>
@@ -420,7 +469,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-vH-Ttf">
                                         <rect key="frame" x="0.0" y="465" width="343" height="116"/>
                                         <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="CreateSpell:" destination="cRI-Ql-Uen" eventType="touchUpInside" id="eWG-tq-nAe"/>
                                         </connections>
@@ -435,11 +484,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pfd-p7-iaN" firstAttribute="top" secondItem="ACE-0b-Kk2" secondAttribute="bottom" id="5EK-Nq-4xu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ACE-0b-Kk2" secondAttribute="trailing" id="9d4-BO-zC1"/>
-                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="top" secondItem="Mmx-uN-ukl" secondAttribute="bottom" id="Dmw-zx-eFr"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="width" secondItem="mY7-rK-wN4" secondAttribute="width" id="0Lc-NI-mLP"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="centerY" secondItem="mY7-rK-wN4" secondAttribute="centerY" id="8HV-ob-ZMW"/>
                             <constraint firstItem="vir-5p-Atx" firstAttribute="leading" secondItem="mY7-rK-wN4" secondAttribute="leadingMargin" id="Do6-sY-laJ"/>
-                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="leading" secondItem="mY7-rK-wN4" secondAttribute="leadingMargin" id="gmf-Me-1Fw"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="centerX" secondItem="mY7-rK-wN4" secondAttribute="centerX" id="UJa-ES-qzR"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="height" secondItem="mY7-rK-wN4" secondAttribute="height" id="Ujl-cc-Gqu"/>
                             <constraint firstItem="vir-5p-Atx" firstAttribute="trailing" secondItem="mY7-rK-wN4" secondAttribute="trailingMargin" id="iLr-7Z-L05"/>
                             <constraint firstItem="vir-5p-Atx" firstAttribute="top" secondItem="Mmx-uN-ukl" secondAttribute="bottom" id="n9m-VL-sCR"/>
                             <constraint firstItem="Pfd-p7-iaN" firstAttribute="top" secondItem="vir-5p-Atx" secondAttribute="bottom" constant="22" id="qPg-Dy-lbT"/>
@@ -455,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijL-yn-jgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="1100"/>
+            <point key="canvasLocation" x="1676" y="1091"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VcC-Tj-RiI">
@@ -477,6 +526,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gray-brick-background-bricks-as-wall-40204307" width="400" height="267"/>
+        <image name="Papyrus" width="551" height="466"/>
     </resources>
 </document>

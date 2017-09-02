@@ -13,6 +13,8 @@ class SelectUserTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DataManager.instance.loadUsers()
+        
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "Papyrus"))
         tableView.reloadData()
     }
 
