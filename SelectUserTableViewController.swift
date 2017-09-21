@@ -18,11 +18,6 @@ class SelectUserTableViewController: UITableViewController {
         tableView.reloadData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         DataManager.instance.loadUsers()
         tableView.reloadData()
@@ -40,10 +35,12 @@ class SelectUserTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID")
-        let user = DataManager.instance.userList[indexPath.row]
-        cell?.textLabel?.text = user.user.name
-        return cell!
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CellID"){
+            let user = DataManager.instance.userList[indexPath.row]
+            cell.textLabel?.text = user.user.name
+            return cell
+        }
+        return UITableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -51,9 +48,6 @@ class SelectUserTableViewController: UITableViewController {
         _ = navigationController?.popViewController(animated: true)
         
     }
-    
-
-   
 
 }
 

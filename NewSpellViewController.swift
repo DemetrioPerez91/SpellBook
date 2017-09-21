@@ -57,9 +57,6 @@ class NewSpellViewController: UIViewController {
     }
 }
 
-
-
-
 extension NewSpellViewController: UIPickerViewDelegate
 {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

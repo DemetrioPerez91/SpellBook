@@ -10,7 +10,6 @@ import Foundation
 
 enum SchoolEnum:Int
 {
-    
     case Necro = 0,
         Evo = 1,
         Conju = 2,

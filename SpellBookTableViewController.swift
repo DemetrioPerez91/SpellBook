@@ -23,11 +23,6 @@ class SpellBookTableViewController: UITableViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -41,14 +36,14 @@ class SpellBookTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID")
-        let spell = spellList[indexPath.row]
-        cell?.textLabel?.text = spell.spellName
-        cell?.detailTextLabel?.text = spell.spellSchool
-        return cell!
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CellID"){
+            let spell = spellList[indexPath.row]
+            cell.textLabel?.text = spell.spellName
+            cell.detailTextLabel?.text = spell.spellSchool
+            return cell
+        }
+        return UITableViewCell()
     }
-    
-    
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete
