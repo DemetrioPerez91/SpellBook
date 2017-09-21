@@ -99,7 +99,7 @@
                     <navigationItem key="navigationItem" title="Spellbook" id="ufY-D7-3Ri">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="21m-VI-Mn3">
                             <connections>
-                                <segue destination="7Si-tl-1Gn" kind="show" id="2Q6-GE-hHP"/>
+                                <segue destination="cRI-Ql-Uen" kind="show" id="2Q6-GE-hHP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -351,6 +351,174 @@
             </objects>
             <point key="canvasLocation" x="1676" y="-480"/>
         </scene>
+        <!--Add New Speel-->
+        <scene sceneID="Yri-0m-MQ5">
+            <objects>
+                <viewController id="cRI-Ql-Uen" customClass="NewSpellViewController" customModule="Spellbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mmx-uN-ukl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pfd-p7-iaN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mY7-rK-wN4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="ACE-0b-Kk2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="vir-5p-Atx">
+                                <rect key="frame" x="16" y="64" width="343" height="581"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pt8-x5-P11" userLabel="NameView">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="85"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAh-pN-aJd">
+                                                <rect key="frame" x="14" y="32.5" width="50" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6X-DS-Y0P" userLabel="NameTextField">
+                                                <rect key="frame" x="75" y="27" width="258" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <constraints>
+                                            <constraint firstItem="i6X-DS-Y0P" firstAttribute="leading" secondItem="iAh-pN-aJd" secondAttribute="trailing" constant="11" id="4vy-6q-qPx"/>
+                                            <constraint firstItem="i6X-DS-Y0P" firstAttribute="top" secondItem="Pt8-x5-P11" secondAttribute="top" constant="27" id="BQM-JQ-3MU"/>
+                                            <constraint firstAttribute="trailing" secondItem="i6X-DS-Y0P" secondAttribute="trailing" constant="10" id="H1K-iV-YGx"/>
+                                            <constraint firstItem="iAh-pN-aJd" firstAttribute="centerY" secondItem="Pt8-x5-P11" secondAttribute="centerY" id="KC8-Sg-adb"/>
+                                            <constraint firstItem="i6X-DS-Y0P" firstAttribute="centerY" secondItem="Pt8-x5-P11" secondAttribute="centerY" id="e9T-WJ-zGb"/>
+                                            <constraint firstItem="iAh-pN-aJd" firstAttribute="leading" secondItem="Pt8-x5-P11" secondAttribute="leading" constant="14" id="wL2-3d-31g"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXD-w7-WmW" userLabel="LevelView">
+                                        <rect key="frame" x="0.0" y="96" width="343" height="85"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9s-px-uem" userLabel="LevelLabel">
+                                                <rect key="frame" x="152" y="11.5" width="40" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nCZ-Tq-aCa" userLabel="LevelSegment">
+                                                <rect key="frame" x="52" y="50" width="239" height="29"/>
+                                                <segments>
+                                                    <segment title="0"/>
+                                                    <segment title="1"/>
+                                                    <segment title="2"/>
+                                                    <segment title="3"/>
+                                                    <segment title="4"/>
+                                                    <segment title="5"/>
+                                                    <segment title="6"/>
+                                                    <segment title="7"/>
+                                                    <segment title="8"/>
+                                                    <segment title="9"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="S9s-px-uem" firstAttribute="centerY" secondItem="uXD-w7-WmW" secondAttribute="centerY" multiplier="0.5" id="5WQ-6o-TnD"/>
+                                            <constraint firstItem="nCZ-Tq-aCa" firstAttribute="centerY" secondItem="uXD-w7-WmW" secondAttribute="centerY" multiplier="1.5" id="9hG-5p-4a9"/>
+                                            <constraint firstItem="nCZ-Tq-aCa" firstAttribute="centerX" secondItem="uXD-w7-WmW" secondAttribute="centerX" id="eoM-2h-8eE"/>
+                                            <constraint firstItem="S9s-px-uem" firstAttribute="centerX" secondItem="uXD-w7-WmW" secondAttribute="centerX" id="hfd-KB-m4e"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78H-LP-eT9" userLabel="ComponentsView">
+                                        <rect key="frame" x="0.0" y="192" width="343" height="85"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="XcX-PN-bvz" userLabel="ComponentsSegment" customClass="MultiSelectSegmentedControl">
+                                                <rect key="frame" x="10" y="50" width="324" height="29"/>
+                                                <segments>
+                                                    <segment title="Somatic"/>
+                                                    <segment title="Verbal"/>
+                                                    <segment title="Material"/>
+                                                    <segment title="Focus"/>
+                                                    <segment title="Divine"/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Components" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAP-fP-Zph" userLabel="ComponentsLabel">
+                                                <rect key="frame" x="123" y="11.5" width="98" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XcX-PN-bvz" firstAttribute="centerX" secondItem="78H-LP-eT9" secondAttribute="centerX" id="TWW-gc-BcK"/>
+                                            <constraint firstItem="uAP-fP-Zph" firstAttribute="centerX" secondItem="78H-LP-eT9" secondAttribute="centerX" id="ita-rT-CCo"/>
+                                            <constraint firstItem="XcX-PN-bvz" firstAttribute="centerY" secondItem="78H-LP-eT9" secondAttribute="centerY" multiplier="1.5" id="rWn-ay-QIm"/>
+                                            <constraint firstItem="uAP-fP-Zph" firstAttribute="centerY" secondItem="78H-LP-eT9" secondAttribute="centerY" multiplier="0.5" id="uxx-uc-qaK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7l-aR-97L">
+                                        <rect key="frame" x="0.0" y="288" width="343" height="166"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCx-nV-kpQ">
+                                                <rect key="frame" x="0.0" y="83" width="343" height="83"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School of Magic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k4-Tv-Xpw">
+                                                <rect key="frame" x="109.5" y="31.5" width="123.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DCx-nV-kpQ" firstAttribute="centerX" secondItem="q7l-aR-97L" secondAttribute="centerX" id="DzF-Yn-5t4"/>
+                                            <constraint firstItem="DCx-nV-kpQ" firstAttribute="centerY" secondItem="q7l-aR-97L" secondAttribute="centerY" multiplier="1.5" id="F6I-he-nxC"/>
+                                            <constraint firstItem="DCx-nV-kpQ" firstAttribute="height" secondItem="q7l-aR-97L" secondAttribute="height" multiplier="0.5" id="IPb-yF-ZJo"/>
+                                            <constraint firstItem="7k4-Tv-Xpw" firstAttribute="centerY" secondItem="q7l-aR-97L" secondAttribute="centerY" multiplier="0.5" id="O1O-PU-AMA"/>
+                                            <constraint firstItem="DCx-nV-kpQ" firstAttribute="width" secondItem="q7l-aR-97L" secondAttribute="width" id="QvQ-SH-xCK"/>
+                                            <constraint firstItem="7k4-Tv-Xpw" firstAttribute="centerX" secondItem="q7l-aR-97L" secondAttribute="centerX" id="zEW-wQ-i86"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-vH-Ttf">
+                                        <rect key="frame" x="0.0" y="465" width="343" height="116"/>
+                                        <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="CreateSpell:" destination="cRI-Ql-Uen" eventType="touchUpInside" id="eWG-tq-nAe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="78H-LP-eT9" firstAttribute="top" secondItem="vir-5p-Atx" secondAttribute="top" constant="192" id="Em6-xb-etS"/>
+                                    <constraint firstAttribute="bottom" secondItem="q7l-aR-97L" secondAttribute="bottom" constant="127" id="gbB-BE-G5Q"/>
+                                    <constraint firstItem="q7l-aR-97L" firstAttribute="top" secondItem="vir-5p-Atx" secondAttribute="top" constant="288" id="usA-UL-psv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="width" secondItem="mY7-rK-wN4" secondAttribute="width" id="0Lc-NI-mLP"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="centerY" secondItem="mY7-rK-wN4" secondAttribute="centerY" id="8HV-ob-ZMW"/>
+                            <constraint firstItem="vir-5p-Atx" firstAttribute="leading" secondItem="mY7-rK-wN4" secondAttribute="leadingMargin" id="Do6-sY-laJ"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="centerX" secondItem="mY7-rK-wN4" secondAttribute="centerX" id="UJa-ES-qzR"/>
+                            <constraint firstItem="ACE-0b-Kk2" firstAttribute="height" secondItem="mY7-rK-wN4" secondAttribute="height" id="Ujl-cc-Gqu"/>
+                            <constraint firstItem="vir-5p-Atx" firstAttribute="trailing" secondItem="mY7-rK-wN4" secondAttribute="trailingMargin" id="iLr-7Z-L05"/>
+                            <constraint firstItem="vir-5p-Atx" firstAttribute="top" secondItem="Mmx-uN-ukl" secondAttribute="bottom" id="n9m-VL-sCR"/>
+                            <constraint firstItem="Pfd-p7-iaN" firstAttribute="top" secondItem="vir-5p-Atx" secondAttribute="bottom" constant="22" id="qPg-Dy-lbT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Speel" id="ozs-Xa-GHS"/>
+                    <connections>
+                        <outlet property="componentSegment" destination="XcX-PN-bvz" id="9Pk-Df-a7S"/>
+                        <outlet property="levelSegment" destination="nCZ-Tq-aCa" id="Ias-nP-ZaH"/>
+                        <outlet property="nameTextField" destination="i6X-DS-Y0P" id="b1f-69-9sm"/>
+                        <outlet property="schoolPicker" destination="DCx-nV-kpQ" id="jJB-lZ-QqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijL-yn-jgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="1091"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="VcC-Tj-RiI">
             <objects>
@@ -368,14 +536,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uk9-qU-iMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1598" y="770"/>
-        </scene>
-        <!--NewSpellView-->
-        <scene sceneID="O7e-u3-FmN">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NewSpellView" id="7Si-tl-1Gn" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DP4-cs-Fr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1676" y="1091"/>
         </scene>
     </scenes>
     <resources>
