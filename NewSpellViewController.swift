@@ -12,6 +12,7 @@ import MultiSelectSegmentedControl
 class NewSpellViewController: UIViewController {
 
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var levelSegment: UISegmentedControl!
     @IBOutlet weak var componentSegment: MultiSelectSegmentedControl!
@@ -27,6 +28,8 @@ class NewSpellViewController: UIViewController {
         schoolPicker.delegate = self
         schoolPicker.dataSource = self
         schoolOfMagic = SchoolEnumS.Necromancy.rawValue
+        scrollView.contentSize.height = 1000
+
         
     }
 
