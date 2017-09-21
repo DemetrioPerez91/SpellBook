@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="638" y="1091"/>
         </scene>
-        <!--MainMenu-->
+        <!--Main Menu-->
         <scene sceneID="whK-q4-orw">
             <objects>
                 <tableViewController id="KmH-95-dic" customClass="MainMenuTableViewController" customModule="Spellbook" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,13 +143,13 @@
                             <outlet property="delegate" destination="KmH-95-dic" id="VEV-dC-KFt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="MainMenu" id="CmM-ng-jak"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="CmM-ng-jak"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="siM-hU-Lac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-132" y="330.58470764617692"/>
         </scene>
-        <!--SpellBook-->
+        <!--Spell Book-->
         <scene sceneID="Ae7-Hd-O2o">
             <objects>
                 <tableViewController id="ceP-Rl-0NV" customClass="SpellBookTableViewController" customModule="Spellbook" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,7 +173,7 @@
                             <outlet property="delegate" destination="ceP-Rl-0NV" id="tGz-G3-7Yb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SpellBook" id="5eV-Qs-cU5"/>
+                    <navigationItem key="navigationItem" title="Spell Book" id="5eV-Qs-cU5"/>
                     <connections>
                         <segue destination="9jD-Sz-ULW" kind="show" identifier="CastSpellSegue" id="kIr-p5-jDm"/>
                     </connections>
@@ -230,11 +230,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-mP-1Ky">
-                                <rect key="frame" x="30" y="303.5" width="315" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="0oT-PE-nYe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-mP-1Ky">
+                                <rect key="frame" x="24.5" y="296.5" width="326" height="74"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfJ-OJ-CFK">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="LfJ-OJ-CFK">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd4-o3-Owr">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
@@ -246,7 +249,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utK-Qv-1uN" userLabel="NameText">
-                                                <rect key="frame" x="61" y="0.0" width="254" height="30"/>
+                                                <rect key="frame" x="72" y="0.0" width="254" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="254" id="bS2-pm-eeD"/>
                                                 </constraints>
@@ -256,12 +259,11 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="utK-Qv-1uN" firstAttribute="leading" secondItem="pd4-o3-Owr" secondAttribute="trailing" id="9t2-yU-cDa"/>
                                             <constraint firstItem="pd4-o3-Owr" firstAttribute="centerY" secondItem="LfJ-OJ-CFK" secondAttribute="centerY" id="TaI-pg-nIO"/>
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-3d-fey">
-                                        <rect key="frame" x="0.0" y="30" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="44" width="326" height="30"/>
                                         <color key="backgroundColor" red="0.86542278020379737" green="0.86026626533392347" blue="0.88141025641025639" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
@@ -276,7 +278,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.98186148154030828" green="0.97601118103339679" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="0oT-PE-nYe" firstAttribute="height" secondItem="7fJ-m4-gka" secondAttribute="height" id="8yg-n2-MU7"/>
+                            <constraint firstItem="0oT-PE-nYe" firstAttribute="centerY" secondItem="7fJ-m4-gka" secondAttribute="centerY" id="EBh-mH-7pL"/>
+                            <constraint firstItem="0oT-PE-nYe" firstAttribute="width" secondItem="7fJ-m4-gka" secondAttribute="width" id="WJa-Xl-Chf"/>
                             <constraint firstItem="LPb-mP-1Ky" firstAttribute="centerX" secondItem="7fJ-m4-gka" secondAttribute="centerX" id="n26-bB-dgZ"/>
+                            <constraint firstItem="0oT-PE-nYe" firstAttribute="centerX" secondItem="7fJ-m4-gka" secondAttribute="centerX" id="vkj-Kg-DbV"/>
                             <constraint firstItem="LPb-mP-1Ky" firstAttribute="centerY" secondItem="7fJ-m4-gka" secondAttribute="centerY" id="wvS-s7-hjF"/>
                         </constraints>
                     </view>
@@ -305,7 +311,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uk9-qU-iMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1598" y="770"/>
+            <point key="canvasLocation" x="-1198" y="331"/>
         </scene>
         <!--NewSpellView-->
         <scene sceneID="O7e-u3-FmN">
@@ -324,4 +330,7 @@
             <point key="canvasLocation" x="1440.8" y="330.58470764617692"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Papyrus" width="551" height="466"/>
+    </resources>
 </document>
