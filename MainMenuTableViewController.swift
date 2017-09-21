@@ -13,6 +13,20 @@ class MainMenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "Papyrus"))
+        if  UserDefaults.standard.bool(forKey: "hasFinishedTutorial")
+        {
+           
+            
+        }
+        else
+        {
+            showToast(message: "YOU NEED TO DO THE TUTORIAL")
+            UserDefaults.standard.set(true, forKey: "hasFinishedTutorial")
+            performSegue(withIdentifier: "tutorial", sender: nil)
+            
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -143,7 +143,13 @@
                             <outlet property="delegate" destination="KmH-95-dic" id="VEV-dC-KFt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Main Menu" id="CmM-ng-jak"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="CmM-ng-jak">
+                        <barButtonItem key="leftBarButtonItem" title="Tutorial" id="sPX-BX-6PX">
+                            <connections>
+                                <segue destination="cWl-dv-5gH" kind="show" identifier="tutorial" id="soz-Hu-4fn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="siM-hU-Lac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,6 +334,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2H-pb-tK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1440.8" y="330.58470764617692"/>
+        </scene>
+        <!--TuroialView-->
+        <scene sceneID="d21-S6-VYx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TuroialView" id="cWl-dv-5gH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mE9-9r-mNb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iby-E2-EuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="775"/>
         </scene>
     </scenes>
     <resources>

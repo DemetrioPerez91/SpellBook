@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c8f-R9-I8c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--How to use It-->
+        <scene sceneID="4DH-ZI-8qv">
+            <objects>
+                <viewController id="c8f-R9-I8c" customClass="TutorialViewController" customModule="Spellbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CeM-8T-rr6"/>
+                        <viewControllerLayoutGuide type="bottom" id="72S-CQ-G5H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4sl-eb-Y6a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="LJK-MK-Ay7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="4ux-MK-NWy">
+                                <rect key="frame" x="19" y="16.5" width="337.5" height="634"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVU-tx-5Ez">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="91.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Create a New User" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lC9-aT-Ljh">
+                                        <rect key="frame" x="0.0" y="89.5" width="337.5" height="96"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Add a spell to the list" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d1-pC-New">
+                                        <rect key="frame" x="0.0" y="183.5" width="337.5" height="96.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Tap the spell in the list" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfD-kJ-3IS">
+                                        <rect key="frame" x="0.0" y="278" width="337.5" height="96"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Cast the spell by touching it in the Spell Book" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpR-Ce-dmr">
+                                        <rect key="frame" x="0.0" y="372" width="337.5" height="167.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyv-Jj-XWw">
+                                        <rect key="frame" x="0.0" y="537.5" width="337.5" height="96.5"/>
+                                        <color key="backgroundColor" red="0.18765729865771813" green="0.57128250838926176" blue="0.70349203020134232" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okButton:" destination="c8f-R9-I8c" eventType="touchUpInside" id="MHt-EN-OZQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4ux-MK-NWy" firstAttribute="centerX" secondItem="4sl-eb-Y6a" secondAttribute="centerX" id="6pv-I8-4Ak"/>
+                            <constraint firstItem="4ux-MK-NWy" firstAttribute="centerY" secondItem="4sl-eb-Y6a" secondAttribute="centerY" id="6qF-t3-4iO"/>
+                            <constraint firstItem="4ux-MK-NWy" firstAttribute="width" secondItem="4sl-eb-Y6a" secondAttribute="width" multiplier="0.9" id="HOe-Ac-OqL"/>
+                            <constraint firstItem="LJK-MK-Ay7" firstAttribute="centerY" secondItem="4sl-eb-Y6a" secondAttribute="centerY" id="OLh-Pu-vba"/>
+                            <constraint firstItem="4ux-MK-NWy" firstAttribute="height" secondItem="4sl-eb-Y6a" secondAttribute="height" multiplier="0.95" id="VdG-nA-Qkk"/>
+                            <constraint firstItem="LJK-MK-Ay7" firstAttribute="width" secondItem="4sl-eb-Y6a" secondAttribute="width" id="cyd-rB-a2Z"/>
+                            <constraint firstItem="LJK-MK-Ay7" firstAttribute="height" secondItem="4sl-eb-Y6a" secondAttribute="height" id="dSm-Pq-Cor"/>
+                            <constraint firstItem="LJK-MK-Ay7" firstAttribute="centerX" secondItem="4sl-eb-Y6a" secondAttribute="centerX" id="m6L-Qh-o9a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="How to use It" id="pKU-se-VRV"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYd-pv-Mcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-481.70914542728639"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Papyrus" width="551" height="466"/>
+    </resources>
+</document>
