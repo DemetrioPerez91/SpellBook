@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KkW-zw-Ad8">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,24 +19,24 @@
                         <viewControllerLayoutGuide type="bottom" id="NsT-t0-Jmn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c6g-N3-701">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="nsi-K4-esB">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to cast your spell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-pt-dKu" userLabel="Label">
-                                <rect key="frame" x="196.5" y="83" width="274.5" height="28"/>
+                                <rect key="frame" x="69.666666666666686" y="114" width="274.66666666666663" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHh-0I-YEx" userLabel="SpellView">
-                                <rect key="frame" x="23" y="131" width="621" height="214"/>
+                                <rect key="frame" x="23" y="206" width="368" height="500"/>
                                 <color key="backgroundColor" red="0.99765625000000002" green="0.94623341754770429" blue="0.84487302640727946" alpha="0.63009159482758625" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="nj1-FW-Kow">
+                                    <constraint firstAttribute="height" constant="215" id="nj1-FW-Kow">
                                         <variation key="heightClass=regular-widthClass=compact" constant="500"/>
                                     </constraint>
                                 </constraints>
@@ -53,7 +53,7 @@
                             <constraint firstItem="nsi-K4-esB" firstAttribute="centerY" secondItem="c6g-N3-701" secondAttribute="centerY" id="ca7-Uh-M6O"/>
                             <constraint firstItem="nsi-K4-esB" firstAttribute="width" secondItem="c6g-N3-701" secondAttribute="width" id="eSR-OD-f2k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XHh-0I-YEx" secondAttribute="trailing" constant="3" id="g6P-YH-T4X"/>
-                            <constraint firstItem="TTk-pt-dKu" firstAttribute="top" secondItem="EkI-1Y-kIm" secondAttribute="bottom" constant="19" id="r2D-L2-WCs"/>
+                            <constraint firstItem="TTk-pt-dKu" firstAttribute="top" secondItem="EkI-1Y-kIm" secondAttribute="bottom" constant="50" id="r2D-L2-WCs"/>
                             <constraint firstItem="NsT-t0-Jmn" firstAttribute="top" secondItem="XHh-0I-YEx" secondAttribute="bottom" constant="30" id="xY5-7R-1BK"/>
                             <constraint firstItem="nsi-K4-esB" firstAttribute="height" secondItem="c6g-N3-701" secondAttribute="height" id="zhl-Mn-ePp"/>
                         </constraints>
