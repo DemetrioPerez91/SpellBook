@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol RefreshTableProtocol {
+protocol RefreshTableProtocol:class {
     func refresh()
 }
 
@@ -20,7 +20,7 @@ class DataManager: NSObject
     var spellList:[SpellVM] = []
     var userList:[UserVM] = []
     var currentUser:UserVM?
-    var refreshDelegate:RefreshTableProtocol?
+    weak var  refreshDelegate:RefreshTableProtocol?
     
     func loadSpells()
     {
