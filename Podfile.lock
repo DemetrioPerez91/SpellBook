@@ -1,0 +1,12 @@
+PODS:
+  - MultiSelectSegmentedControl (1.1.0)
+
+DEPENDENCIES:
+  - MultiSelectSegmentedControl
+
+SPEC CHECKSUMS:
+  MultiSelectSegmentedControl: 54fb23c997b971eff621cfcf965ff1613d99c3d2
+
+PODFILE CHECKSUM: 196d2f3f2776352380aa4ae24b7c22c4853a1695
+
+COCOAPODS: 1.2.1

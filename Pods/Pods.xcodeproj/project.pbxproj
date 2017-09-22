@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1498A3B78687805EF8834215C3784338 /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5815E912FAE07587CB2E899951F0CBE4 /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1550D90533F47463FABED2EB9AA23D31 /* Pods-SpellbookTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EA34702FE2557A1FD9F9C28DA323DD /* Pods-SpellbookTests-dummy.m */; };
+		1AE6B6F2885C5A4ED3233D85DB62B9C7 /* Pods-Spellbook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BAC7A1BAB322418265CC163779E8E8 /* Pods-Spellbook-dummy.m */; };
+		259CAFB82769A8EF99ABCED339FB4813 /* Pods-SpellbookTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 831B5B1B8E5995A2A6DEEC2A0D2FAD51 /* Pods-SpellbookTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F971923E3D669D961B2156DA0A459D8 /* MultiSelectSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E86DE436551CFE83CC38B9B446091552 /* MultiSelectSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		868886223707AF1856081E4643746BC1 /* Pods-Spellbook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08289F2E24F46C104335D7B8E04EEC41 /* Pods-Spellbook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E5A603D8C25A5DD9B176C638562D2D1 /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ACC0E1A2CEF6FC7222D7B72A9516E8 /* MultiSelectSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2023C54354650688A0917274EDF31D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D86B7415287E1C8DAD17A7C53F62B53D /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD867AE342AE50F66696E1FE0AE18DF /* MultiSelectSegmentedControl-dummy.m */; };
+		F3EA262700514BC09D6E4EC66442307D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F4AC15AB25F12AC6FA600A5D4C2DA270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BF758A5C3A06F81EE483AB470BAFA82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EA86AAABF9A454A48FFE7A138A0113;
+			remoteInfo = MultiSelectSegmentedControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08289F2E24F46C104335D7B8E04EEC41 /* Pods-Spellbook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spellbook-umbrella.h"; sourceTree = "<group>"; };
+		16E5DFB9AD8D3D602AAE0B83CF52947C /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
+		3A9F1305358A69AF161FD78AC8FC557A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		482581D503E44851D7E3881163C6BFBD /* Pods-SpellbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpellbookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD858007B166B61C07C72C8CA853C73 /* Pods-SpellbookTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpellbookTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		56A8BA1CB668561F8E7E05EDD49D8510 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiSelectSegmentedControl.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5815E912FAE07587CB2E899951F0CBE4 /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6687DFF0A2E60ECE92E318365931DB2D /* Pods-Spellbook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spellbook-acknowledgements.plist"; sourceTree = "<group>"; };
+		67BAC7A1BAB322418265CC163779E8E8 /* Pods-Spellbook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spellbook-dummy.m"; sourceTree = "<group>"; };
+		708D060EA1871E22D5FDC8A85C7368E1 /* Pods-Spellbook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Spellbook-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7733A232F0610DE83CF90E3878A3E840 /* Pods-Spellbook-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Spellbook-frameworks.sh"; sourceTree = "<group>"; };
+		7891879E58DB37550BDE026938FF108A /* Pods-SpellbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpellbookTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E55D71378C7AC2A0FFFF0A61E19480C /* Pods-SpellbookTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpellbookTests-frameworks.sh"; sourceTree = "<group>"; };
+		831B5B1B8E5995A2A6DEEC2A0D2FAD51 /* Pods-SpellbookTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpellbookTests-umbrella.h"; sourceTree = "<group>"; };
+		8B7BE17B10A01DFB97FF00FFA44C3A75 /* Pods-Spellbook-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Spellbook-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		963BE08BCA9B94558E330C835B41B4AF /* Pods-Spellbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spellbook.debug.xcconfig"; sourceTree = "<group>"; };
+		99945C57A05BF5DF563848B72929A9C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD867AE342AE50F66696E1FE0AE18DF /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
+		9D831D03E9BDCC85CC922AB2796B905A /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
+		A0EA34702FE2557A1FD9F9C28DA323DD /* Pods-SpellbookTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpellbookTests-dummy.m"; sourceTree = "<group>"; };
+		AD3F90839BE51EF96D96CC7CB1C80F4A /* Pods-SpellbookTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpellbookTests-resources.sh"; sourceTree = "<group>"; };
+		BB32E9E6418316D3574AFE5F496DDD73 /* Pods-Spellbook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Spellbook.modulemap"; sourceTree = "<group>"; };
+		C9C6F94F02CB0F212C2C5BEFC6E50A09 /* Pods_SpellbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpellbookTests.framework; path = "Pods-SpellbookTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0B7C7C5F6B8AC034084A3DB45800BB /* Pods-SpellbookTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SpellbookTests.modulemap"; sourceTree = "<group>"; };
+		D5A2E6D11F4A8A175190320061E980BA /* Pods_Spellbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Spellbook.framework; path = "Pods-Spellbook.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8F66E308539D41687359D6DA0ABD52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25C6CF3C487581F9D2289CDB4D43E12 /* Pods-SpellbookTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpellbookTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2ACC0E1A2CEF6FC7222D7B72A9516E8 /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
+		E4D34E8DE9528C22C81FC24EDB8BB1B8 /* Pods-Spellbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spellbook.release.xcconfig"; sourceTree = "<group>"; };
+		E86DE436551CFE83CC38B9B446091552 /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
+		F66C31F1038C5E5003A5FCFB83E0EE43 /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2502CE6CD59F3CF2BC0B38BB2856EA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2023C54354650688A0917274EDF31D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25097549B1511A826B75B7BE01C181C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AC15AB25F12AC6FA600A5D4C2DA270 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF73B740F15877DF31F2C34143D268E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EA262700514BC09D6E4EC66442307D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009F6B856AB47F3B098ABE4EF8F9EAAA /* Pods-Spellbook */ = {
+			isa = PBXGroup;
+			children = (
+				3A9F1305358A69AF161FD78AC8FC557A /* Info.plist */,
+				BB32E9E6418316D3574AFE5F496DDD73 /* Pods-Spellbook.modulemap */,
+				708D060EA1871E22D5FDC8A85C7368E1 /* Pods-Spellbook-acknowledgements.markdown */,
+				6687DFF0A2E60ECE92E318365931DB2D /* Pods-Spellbook-acknowledgements.plist */,
+				67BAC7A1BAB322418265CC163779E8E8 /* Pods-Spellbook-dummy.m */,
+				7733A232F0610DE83CF90E3878A3E840 /* Pods-Spellbook-frameworks.sh */,
+				8B7BE17B10A01DFB97FF00FFA44C3A75 /* Pods-Spellbook-resources.sh */,
+				08289F2E24F46C104335D7B8E04EEC41 /* Pods-Spellbook-umbrella.h */,
+				963BE08BCA9B94558E330C835B41B4AF /* Pods-Spellbook.debug.xcconfig */,
+				E4D34E8DE9528C22C81FC24EDB8BB1B8 /* Pods-Spellbook.release.xcconfig */,
+			);
+			name = "Pods-Spellbook";
+			path = "Target Support Files/Pods-Spellbook";
+			sourceTree = "<group>";
+		};
+		06A527C1AC30D7F473621472165ADFFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0903408192FCF2B71D75C3AA3A47A06 /* MultiSelectSegmentedControl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3573BADBEECEAA1A38E7EDF783C97C53 /* Pods-SpellbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				99945C57A05BF5DF563848B72929A9C8 /* Info.plist */,
+				CA0B7C7C5F6B8AC034084A3DB45800BB /* Pods-SpellbookTests.modulemap */,
+				4CD858007B166B61C07C72C8CA853C73 /* Pods-SpellbookTests-acknowledgements.markdown */,
+				E25C6CF3C487581F9D2289CDB4D43E12 /* Pods-SpellbookTests-acknowledgements.plist */,
+				A0EA34702FE2557A1FD9F9C28DA323DD /* Pods-SpellbookTests-dummy.m */,
+				7E55D71378C7AC2A0FFFF0A61E19480C /* Pods-SpellbookTests-frameworks.sh */,
+				AD3F90839BE51EF96D96CC7CB1C80F4A /* Pods-SpellbookTests-resources.sh */,
+				831B5B1B8E5995A2A6DEEC2A0D2FAD51 /* Pods-SpellbookTests-umbrella.h */,
+				482581D503E44851D7E3881163C6BFBD /* Pods-SpellbookTests.debug.xcconfig */,
+				7891879E58DB37550BDE026938FF108A /* Pods-SpellbookTests.release.xcconfig */,
+			);
+			name = "Pods-SpellbookTests";
+			path = "Target Support Files/Pods-SpellbookTests";
+			sourceTree = "<group>";
+		};
+		46F53CBA65405C4960F95F21EF8A0EEA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				009F6B856AB47F3B098ABE4EF8F9EAAA /* Pods-Spellbook */,
+				3573BADBEECEAA1A38E7EDF783C97C53 /* Pods-SpellbookTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				06A527C1AC30D7F473621472165ADFFF /* Pods */,
+				9833AA96C85EC5C140E6616FCE501B82 /* Products */,
+				46F53CBA65405C4960F95F21EF8A0EEA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9833AA96C85EC5C140E6616FCE501B82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56A8BA1CB668561F8E7E05EDD49D8510 /* MultiSelectSegmentedControl.framework */,
+				D5A2E6D11F4A8A175190320061E980BA /* Pods_Spellbook.framework */,
+				C9C6F94F02CB0F212C2C5BEFC6E50A09 /* Pods_SpellbookTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0903408192FCF2B71D75C3AA3A47A06 /* MultiSelectSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				E86DE436551CFE83CC38B9B446091552 /* MultiSelectSegmentedControl.h */,
+				E2ACC0E1A2CEF6FC7222D7B72A9516E8 /* MultiSelectSegmentedControl.m */,
+				D5B7E4ABB9E1015A559E66CAA01984BB /* Support Files */,
+			);
+			name = MultiSelectSegmentedControl;
+			path = MultiSelectSegmentedControl;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D5B7E4ABB9E1015A559E66CAA01984BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F66E308539D41687359D6DA0ABD52 /* Info.plist */,
+				9D831D03E9BDCC85CC922AB2796B905A /* MultiSelectSegmentedControl.modulemap */,
+				16E5DFB9AD8D3D602AAE0B83CF52947C /* MultiSelectSegmentedControl.xcconfig */,
+				9CD867AE342AE50F66696E1FE0AE18DF /* MultiSelectSegmentedControl-dummy.m */,
+				F66C31F1038C5E5003A5FCFB83E0EE43 /* MultiSelectSegmentedControl-prefix.pch */,
+				5815E912FAE07587CB2E899951F0CBE4 /* MultiSelectSegmentedControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MultiSelectSegmentedControl";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		716BE4D8799E7BB4C537D58B522FD3BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1498A3B78687805EF8834215C3784338 /* MultiSelectSegmentedControl-umbrella.h in Headers */,
+				6F971923E3D669D961B2156DA0A459D8 /* MultiSelectSegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8394D56C85E4D1C13F621A2FFBA7FFC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868886223707AF1856081E4643746BC1 /* Pods-Spellbook-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7AD9D7337FED0F50C084FC722FCCE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259CAFB82769A8EF99ABCED339FB4813 /* Pods-SpellbookTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2495B62D1870C32FB59E5897BF6349AD /* Pods-Spellbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E526B13D04A48263667856210D39CA71 /* Build configuration list for PBXNativeTarget "Pods-Spellbook" */;
+			buildPhases = (
+				A981595C99E793736DAD4A3420CE92CE /* Sources */,
+				DF73B740F15877DF31F2C34143D268E6 /* Frameworks */,
+				8394D56C85E4D1C13F621A2FFBA7FFC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF4912C0025503991AA4E4EC7EB69D60 /* PBXTargetDependency */,
+			);
+			name = "Pods-Spellbook";
+			productName = "Pods-Spellbook";
+			productReference = D5A2E6D11F4A8A175190320061E980BA /* Pods_Spellbook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94EA86AAABF9A454A48FFE7A138A0113 /* MultiSelectSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA27A02128FF3640A548525AE592EAB /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */;
+			buildPhases = (
+				6A0F9A175FE38A56A4889488979C1FE3 /* Sources */,
+				2502CE6CD59F3CF2BC0B38BB2856EA0A /* Frameworks */,
+				716BE4D8799E7BB4C537D58B522FD3BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiSelectSegmentedControl;
+			productName = MultiSelectSegmentedControl;
+			productReference = 56A8BA1CB668561F8E7E05EDD49D8510 /* MultiSelectSegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B061FA2EBB73C68A9D952167C5413ACB /* Pods-SpellbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF524582E8CFBBED687CFA76E0910EF /* Build configuration list for PBXNativeTarget "Pods-SpellbookTests" */;
+			buildPhases = (
+				182EEB3D92E576EA799F71103193524E /* Sources */,
+				D25097549B1511A826B75B7BE01C181C /* Frameworks */,
+				BB7AD9D7337FED0F50C084FC722FCCE1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SpellbookTests";
+			productName = "Pods-SpellbookTests";
+			productReference = C9C6F94F02CB0F212C2C5BEFC6E50A09 /* Pods_SpellbookTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9833AA96C85EC5C140E6616FCE501B82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94EA86AAABF9A454A48FFE7A138A0113 /* MultiSelectSegmentedControl */,
+				2495B62D1870C32FB59E5897BF6349AD /* Pods-Spellbook */,
+				B061FA2EBB73C68A9D952167C5413ACB /* Pods-SpellbookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182EEB3D92E576EA799F71103193524E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1550D90533F47463FABED2EB9AA23D31 /* Pods-SpellbookTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0F9A175FE38A56A4889488979C1FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86B7415287E1C8DAD17A7C53F62B53D /* MultiSelectSegmentedControl-dummy.m in Sources */,
+				8E5A603D8C25A5DD9B176C638562D2D1 /* MultiSelectSegmentedControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A981595C99E793736DAD4A3420CE92CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE6B6F2885C5A4ED3233D85DB62B9C7 /* Pods-Spellbook-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF4912C0025503991AA4E4EC7EB69D60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MultiSelectSegmentedControl;
+			target = 94EA86AAABF9A454A48FFE7A138A0113 /* MultiSelectSegmentedControl */;
+			targetProxy = 6BF758A5C3A06F81EE483AB470BAFA82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		444400B728DFF5A0CBA0E56F8819F766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963BE08BCA9B94558E330C835B41B4AF /* Pods-Spellbook.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Spellbook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spellbook/Pods-Spellbook.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Spellbook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4865BCA1B09251E2844ADE83CAF48722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D34E8DE9528C22C81FC24EDB8BB1B8 /* Pods-Spellbook.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Spellbook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spellbook/Pods-Spellbook.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Spellbook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49F25BCAC65AE54B500622531858D9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E5DFB9AD8D3D602AAE0B83CF52947C /* MultiSelectSegmentedControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MultiSelectSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D54535F0AEC6059ED33426B9C0B47F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7891879E58DB37550BDE026938FF108A /* Pods-SpellbookTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpellbookTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpellbookTests/Pods-SpellbookTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpellbookTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C09E2D2BAAAB2ED51D6C3782736B05C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E5DFB9AD8D3D602AAE0B83CF52947C /* MultiSelectSegmentedControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MultiSelectSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3AEE52A6DB8B4E886920CB2CFC09555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482581D503E44851D7E3881163C6BFBD /* Pods-SpellbookTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpellbookTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpellbookTests/Pods-SpellbookTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpellbookTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF524582E8CFBBED687CFA76E0910EF /* Build configuration list for PBXNativeTarget "Pods-SpellbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AEE52A6DB8B4E886920CB2CFC09555 /* Debug */,
+				4D54535F0AEC6059ED33426B9C0B47F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA27A02128FF3640A548525AE592EAB /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F25BCAC65AE54B500622531858D9B6 /* Debug */,
+				C09E2D2BAAAB2ED51D6C3782736B05C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E526B13D04A48263667856210D39CA71 /* Build configuration list for PBXNativeTarget "Pods-Spellbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444400B728DFF5A0CBA0E56F8819F766 /* Debug */,
+				4865BCA1B09251E2844ADE83CAF48722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

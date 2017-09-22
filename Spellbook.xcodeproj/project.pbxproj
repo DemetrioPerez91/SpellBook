@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EDD7B05D6210BB9B1AD3C0F /* Pods_SpellbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230D49D82E0A6267AEEDBD1 /* Pods_SpellbookTests.framework */; };
+		772D81A4F12E3C4EA01F7EC8 /* Pods_Spellbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0769EECC85D824FC5AA32569 /* Pods_Spellbook.framework */; };
+		CE4877C61F54659F0039CCC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877C51F54659F0039CCC3 /* AppDelegate.swift */; };
+		CE4877CB1F54659F0039CCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4877C91F54659F0039CCC3 /* Main.storyboard */; };
+		CE4877CD1F54659F0039CCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4877CC1F54659F0039CCC3 /* Assets.xcassets */; };
+		CE4877D01F54659F0039CCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4877CE1F54659F0039CCC3 /* LaunchScreen.storyboard */; };
+		CE4877DB1F54659F0039CCC3 /* SpellbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877DA1F54659F0039CCC3 /* SpellbookTests.swift */; };
+		CE4877ED1F54CC770039CCC3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877EC1F54CC770039CCC3 /* Enum.swift */; };
+		CE4877EF1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE4877EE1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg */; };
+		CE4877F11F556F240039CCC3 /* NewSpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877F01F556F240039CCC3 /* NewSpellViewController.swift */; };
+		CE4877F31F55780C0039CCC3 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877F21F55780C0039CCC3 /* Spell.swift */; };
+		CE4877F71F5579800039CCC3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877F61F5579800039CCC3 /* RealmManager.swift */; };
+		CE4877F91F557A4D0039CCC3 /* SpellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877F81F557A4D0039CCC3 /* SpellVM.swift */; };
+		CE4877FB1F557CF00039CCC3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877FA1F557CF00039CCC3 /* DataManager.swift */; };
+		CE4878021F557E2D0039CCC3 /* SpellListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878011F557E2D0039CCC3 /* SpellListTableViewController.swift */; };
+		CE4878051F5580770039CCC3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878031F5580770039CCC3 /* Realm.framework */; };
+		CE4878061F5580770039CCC3 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878031F5580770039CCC3 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE4878071F5580770039CCC3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878041F5580770039CCC3 /* RealmSwift.framework */; };
+		CE4878081F5580770039CCC3 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878041F5580770039CCC3 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE48780B1F5593630039CCC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48780A1F5593630039CCC3 /* User.swift */; };
+		CE48780D1F5597340039CCC3 /* UserVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48780C1F5597340039CCC3 /* UserVM.swift */; };
+		CE48780F1F559DD10039CCC3 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48780E1F559DD10039CCC3 /* NewUserViewController.swift */; };
+		CE4878111F559ED70039CCC3 /* SelectUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878101F559ED70039CCC3 /* SelectUserTableViewController.swift */; };
+		CE4878131F55A3110039CCC3 /* SpellBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878121F55A3110039CCC3 /* SpellBookTableViewController.swift */; };
+		CE4878151F572C510039CCC3 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878141F572C510039CCC3 /* MainMenuTableViewController.swift */; };
+		CE4878181F599B7E0039CCC3 /* SpellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878161F599B7E0039CCC3 /* SpellTableViewCell.swift */; };
+		CE4878191F599B7E0039CCC3 /* SpellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4878171F599B7E0039CCC3 /* SpellTableViewCell.xib */; };
+		CE48788D1F5B037E0039CCC3 /* Papyrus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE48788C1F5B037E0039CCC3 /* Papyrus.jpg */; };
+		CE4878921F5B0C250039CCC3 /* CastSpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878911F5B0C250039CCC3 /* CastSpellViewController.swift */; };
+		CEBCBC7D1F73F56B00B98884 /* spellBook.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC7C1F73F56B00B98884 /* spellBook.png */; };
+		CEBCBC7F1F73F58E00B98884 /* spellBookIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC7E1F73F58E00B98884 /* spellBookIpad.png */; };
+		CEBCBC821F73FC3B00B98884 /* NewSpellView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC801F73FC3B00B98884 /* NewSpellView.storyboard */; };
+		CEBCBC861F74585600B98884 /* CastSpellView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC851F74585600B98884 /* CastSpellView.storyboard */; };
+		CEBCBC891F7462A900B98884 /* TuroialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC871F7462A900B98884 /* TuroialView.storyboard */; };
+		CEBCBC8B1F74658900B98884 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCBC8A1F74658900B98884 /* TutorialViewController.swift */; };
+		CEBCBC8E1F748F9300B98884 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCBC8D1F748F9300B98884 /* Toast.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE4877D71F54659F0039CCC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4877BA1F54659E0039CCC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4877C11F54659E0039CCC3;
+			remoteInfo = Spellbook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE4878091F5580770039CCC3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE4878081F5580770039CCC3 /* RealmSwift.framework in Embed Frameworks */,
+				CE4878061F5580770039CCC3 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0769EECC85D824FC5AA32569 /* Pods_Spellbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spellbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F6AE2EBB9E2985600878F1 /* Pods-SpellbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellbookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpellbookTests/Pods-SpellbookTests.release.xcconfig"; sourceTree = "<group>"; };
+		502F9F12CFB0893E9A6D5BAE /* Pods-Spellbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spellbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spellbook/Pods-Spellbook.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB0248A7DA3827CB75CF9B8 /* Pods-SpellbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpellbookTests/Pods-SpellbookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6ED570C0B2E41616E0390F3F /* Pods-Spellbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spellbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spellbook/Pods-Spellbook.release.xcconfig"; sourceTree = "<group>"; };
+		CE4877C21F54659E0039CCC3 /* Spellbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spellbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4877C51F54659F0039CCC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE4877CA1F54659F0039CCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4877CC1F54659F0039CCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4877CF1F54659F0039CCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4877D11F54659F0039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4877D61F54659F0039CCC3 /* SpellbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4877DA1F54659F0039CCC3 /* SpellbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellbookTests.swift; sourceTree = "<group>"; };
+		CE4877DC1F54659F0039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4877EC1F54CC770039CCC3 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		CE4877EE1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gray-brick-background-bricks-as-wall-40204307.jpg"; sourceTree = "<group>"; };
+		CE4877F01F556F240039CCC3 /* NewSpellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSpellViewController.swift; sourceTree = "<group>"; };
+		CE4877F21F55780C0039CCC3 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		CE4877F61F5579800039CCC3 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		CE4877F81F557A4D0039CCC3 /* SpellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellVM.swift; sourceTree = "<group>"; };
+		CE4877FA1F557CF00039CCC3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CE4878011F557E2D0039CCC3 /* SpellListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellListTableViewController.swift; sourceTree = "<group>"; };
+		CE4878031F5580770039CCC3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		CE4878041F5580770039CCC3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		CE48780A1F5593630039CCC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE48780C1F5597340039CCC3 /* UserVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVM.swift; sourceTree = "<group>"; };
+		CE48780E1F559DD10039CCC3 /* NewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		CE4878101F559ED70039CCC3 /* SelectUserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserTableViewController.swift; sourceTree = "<group>"; };
+		CE4878121F55A3110039CCC3 /* SpellBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellBookTableViewController.swift; sourceTree = "<group>"; };
+		CE4878141F572C510039CCC3 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
+		CE4878161F599B7E0039CCC3 /* SpellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellTableViewCell.swift; sourceTree = "<group>"; };
+		CE4878171F599B7E0039CCC3 /* SpellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellTableViewCell.xib; sourceTree = "<group>"; };
+		CE48788C1F5B037E0039CCC3 /* Papyrus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Papyrus.jpg; sourceTree = SOURCE_ROOT; };
+		CE4878911F5B0C250039CCC3 /* CastSpellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastSpellViewController.swift; sourceTree = "<group>"; };
+		CEBCBC7C1F73F56B00B98884 /* spellBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellBook.png; sourceTree = "<group>"; };
+		CEBCBC7E1F73F58E00B98884 /* spellBookIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellBookIpad.png; sourceTree = "<group>"; };
+		CEBCBC811F73FC3B00B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewSpellView.storyboard; sourceTree = "<group>"; };
+		CEBCBC851F74585600B98884 /* CastSpellView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CastSpellView.storyboard; sourceTree = "<group>"; };
+		CEBCBC881F7462A900B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TuroialView.storyboard; sourceTree = "<group>"; };
+		CEBCBC8A1F74658900B98884 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		CEBCBC8D1F748F9300B98884 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		E230D49D82E0A6267AEEDBD1 /* Pods_SpellbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4877BF1F54659E0039CCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4878051F5580770039CCC3 /* Realm.framework in Frameworks */,
+				772D81A4F12E3C4EA01F7EC8 /* Pods_Spellbook.framework in Frameworks */,
+				CE4878071F5580770039CCC3 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4877D31F54659F0039CCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDD7B05D6210BB9B1AD3C0F /* Pods_SpellbookTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C7E46EEB487DFF703F85B92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0769EECC85D824FC5AA32569 /* Pods_Spellbook.framework */,
+				E230D49D82E0A6267AEEDBD1 /* Pods_SpellbookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34DFB62CD6D8ECDCCDC9E071 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				502F9F12CFB0893E9A6D5BAE /* Pods-Spellbook.debug.xcconfig */,
+				6ED570C0B2E41616E0390F3F /* Pods-Spellbook.release.xcconfig */,
+				6AB0248A7DA3827CB75CF9B8 /* Pods-SpellbookTests.debug.xcconfig */,
+				15F6AE2EBB9E2985600878F1 /* Pods-SpellbookTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE4877B91F54659D0039CCC3 = {
+			isa = PBXGroup;
+			children = (
+				CE4878031F5580770039CCC3 /* Realm.framework */,
+				CE4878041F5580770039CCC3 /* RealmSwift.framework */,
+				CE4877C41F54659E0039CCC3 /* Spellbook */,
+				CE4877D91F54659F0039CCC3 /* SpellbookTests */,
+				CE4877C31F54659E0039CCC3 /* Products */,
+				34DFB62CD6D8ECDCCDC9E071 /* Pods */,
+				1C7E46EEB487DFF703F85B92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE4877C31F54659E0039CCC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4877C21F54659E0039CCC3 /* Spellbook.app */,
+				CE4877D61F54659F0039CCC3 /* SpellbookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE4877C41F54659E0039CCC3 /* Spellbook */ = {
+			isa = PBXGroup;
+			children = (
+				CE48788E1F5B08BF0039CCC3 /* Extensions */,
+				CE4877FF1F557DC10039CCC3 /* View */,
+				CE4877FE1F557DAD0039CCC3 /* ViewModel */,
+				CE4877FD1F557D9F0039CCC3 /* Model */,
+				CE4877FC1F557D820039CCC3 /* Singletons */,
+				CE4878001F557DE10039CCC3 /* Other */,
+				CEBCBC8C1F74788000B98884 /* Assets */,
+				CE4877CC1F54659F0039CCC3 /* Assets.xcassets */,
+				CE4877D11F54659F0039CCC3 /* Info.plist */,
+			);
+			path = Spellbook;
+			sourceTree = "<group>";
+		};
+		CE4877D91F54659F0039CCC3 /* SpellbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4877DA1F54659F0039CCC3 /* SpellbookTests.swift */,
+				CE4877DC1F54659F0039CCC3 /* Info.plist */,
+			);
+			path = SpellbookTests;
+			sourceTree = "<group>";
+		};
+		CE4877FC1F557D820039CCC3 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				CE4877C51F54659F0039CCC3 /* AppDelegate.swift */,
+				CE4877FA1F557CF00039CCC3 /* DataManager.swift */,
+				CE4877F61F5579800039CCC3 /* RealmManager.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		CE4877FD1F557D9F0039CCC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE4877F21F55780C0039CCC3 /* Spell.swift */,
+				CE48780A1F5593630039CCC3 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE4877FE1F557DAD0039CCC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE48780C1F5597340039CCC3 /* UserVM.swift */,
+				CE4877F81F557A4D0039CCC3 /* SpellVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE4877FF1F557DC10039CCC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE48781A1F599B910039CCC3 /* xib */,
+				CE4878911F5B0C250039CCC3 /* CastSpellViewController.swift */,
+				CE4878161F599B7E0039CCC3 /* SpellTableViewCell.swift */,
+				CE4877F01F556F240039CCC3 /* NewSpellViewController.swift */,
+				CE4878011F557E2D0039CCC3 /* SpellListTableViewController.swift */,
+				CE48780E1F559DD10039CCC3 /* NewUserViewController.swift */,
+				CE4878101F559ED70039CCC3 /* SelectUserTableViewController.swift */,
+				CE4878141F572C510039CCC3 /* MainMenuTableViewController.swift */,
+				CE4878121F55A3110039CCC3 /* SpellBookTableViewController.swift */,
+				CEBCBC8A1F74658900B98884 /* TutorialViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE4878001F557DE10039CCC3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CE4877EC1F54CC770039CCC3 /* Enum.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		CE48781A1F599B910039CCC3 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				CE4877C91F54659F0039CCC3 /* Main.storyboard */,
+				CEBCBC871F7462A900B98884 /* TuroialView.storyboard */,
+				CEBCBC851F74585600B98884 /* CastSpellView.storyboard */,
+				CEBCBC801F73FC3B00B98884 /* NewSpellView.storyboard */,
+				CE4878171F599B7E0039CCC3 /* SpellTableViewCell.xib */,
+				CE4877CE1F54659F0039CCC3 /* LaunchScreen.storyboard */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		CE48788E1F5B08BF0039CCC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEBCBC8D1F748F9300B98884 /* Toast.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CEBCBC8C1F74788000B98884 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CEBCBC7E1F73F58E00B98884 /* spellBookIpad.png */,
+				CEBCBC7C1F73F56B00B98884 /* spellBook.png */,
+				CE48788C1F5B037E0039CCC3 /* Papyrus.jpg */,
+				CE4877EE1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE4877C11F54659E0039CCC3 /* Spellbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4877DF1F54659F0039CCC3 /* Build configuration list for PBXNativeTarget "Spellbook" */;
+			buildPhases = (
+				A517CC7AFEA67DDBBAEBB0B0 /* [CP] Check Pods Manifest.lock */,
+				CE4877BE1F54659E0039CCC3 /* Sources */,
+				CE4877BF1F54659E0039CCC3 /* Frameworks */,
+				CE4877C01F54659E0039CCC3 /* Resources */,
+				AF746B3133815B96DA09B9B0 /* [CP] Embed Pods Frameworks */,
+				72C5BB3E101228E629A1E8AA /* [CP] Copy Pods Resources */,
+				CE4878091F5580770039CCC3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spellbook;
+			productName = Spellbook;
+			productReference = CE4877C21F54659E0039CCC3 /* Spellbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE4877D51F54659F0039CCC3 /* SpellbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4877E21F54659F0039CCC3 /* Build configuration list for PBXNativeTarget "SpellbookTests" */;
+			buildPhases = (
+				E2F5FB7A690A20292F0A079F /* [CP] Check Pods Manifest.lock */,
+				CE4877D21F54659F0039CCC3 /* Sources */,
+				CE4877D31F54659F0039CCC3 /* Frameworks */,
+				CE4877D41F54659F0039CCC3 /* Resources */,
+				354399C8DCF81B004D041A5C /* [CP] Embed Pods Frameworks */,
+				4435494D4A2AC65FE58084B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4877D81F54659F0039CCC3 /* PBXTargetDependency */,
+			);
+			name = SpellbookTests;
+			productName = SpellbookTests;
+			productReference = CE4877D61F54659F0039CCC3 /* SpellbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4877BA1F54659E0039CCC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = DemetrioPerez;
+				TargetAttributes = {
+					CE4877C11F54659E0039CCC3 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					CE4877D51F54659F0039CCC3 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE4877C11F54659E0039CCC3;
+					};
+				};
+			};
+			buildConfigurationList = CE4877BD1F54659E0039CCC3 /* Build configuration list for PBXProject "Spellbook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE4877B91F54659D0039CCC3;
+			productRefGroup = CE4877C31F54659E0039CCC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE4877C11F54659E0039CCC3 /* Spellbook */,
+				CE4877D51F54659F0039CCC3 /* SpellbookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4877C01F54659E0039CCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBCBC821F73FC3B00B98884 /* NewSpellView.storyboard in Resources */,
+				CE48788D1F5B037E0039CCC3 /* Papyrus.jpg in Resources */,
+				CEBCBC891F7462A900B98884 /* TuroialView.storyboard in Resources */,
+				CE4877D01F54659F0039CCC3 /* LaunchScreen.storyboard in Resources */,
+				CE4878191F599B7E0039CCC3 /* SpellTableViewCell.xib in Resources */,
+				CEBCBC7D1F73F56B00B98884 /* spellBook.png in Resources */,
+				CEBCBC861F74585600B98884 /* CastSpellView.storyboard in Resources */,
+				CE4877CD1F54659F0039CCC3 /* Assets.xcassets in Resources */,
+				CEBCBC7F1F73F58E00B98884 /* spellBookIpad.png in Resources */,
+				CE4877EF1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg in Resources */,
+				CE4877CB1F54659F0039CCC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4877D41F54659F0039CCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		354399C8DCF81B004D041A5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpellbookTests/Pods-SpellbookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4435494D4A2AC65FE58084B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpellbookTests/Pods-SpellbookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C5BB3E101228E629A1E8AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spellbook/Pods-Spellbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A517CC7AFEA67DDBBAEBB0B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF746B3133815B96DA09B9B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spellbook/Pods-Spellbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F5FB7A690A20292F0A079F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4877BE1F54659E0039CCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4878021F557E2D0039CCC3 /* SpellListTableViewController.swift in Sources */,
+				CE48780D1F5597340039CCC3 /* UserVM.swift in Sources */,
+				CEBCBC8E1F748F9300B98884 /* Toast.swift in Sources */,
+				CE4877F11F556F240039CCC3 /* NewSpellViewController.swift in Sources */,
+				CE4877ED1F54CC770039CCC3 /* Enum.swift in Sources */,
+				CE4877F71F5579800039CCC3 /* RealmManager.swift in Sources */,
+				CE4877FB1F557CF00039CCC3 /* DataManager.swift in Sources */,
+				CE48780B1F5593630039CCC3 /* User.swift in Sources */,
+				CE4878131F55A3110039CCC3 /* SpellBookTableViewController.swift in Sources */,
+				CE4877F91F557A4D0039CCC3 /* SpellVM.swift in Sources */,
+				CEBCBC8B1F74658900B98884 /* TutorialViewController.swift in Sources */,
+				CE4878181F599B7E0039CCC3 /* SpellTableViewCell.swift in Sources */,
+				CE4878111F559ED70039CCC3 /* SelectUserTableViewController.swift in Sources */,
+				CE4878921F5B0C250039CCC3 /* CastSpellViewController.swift in Sources */,
+				CE48780F1F559DD10039CCC3 /* NewUserViewController.swift in Sources */,
+				CE4877F31F55780C0039CCC3 /* Spell.swift in Sources */,
+				CE4877C61F54659F0039CCC3 /* AppDelegate.swift in Sources */,
+				CE4878151F572C510039CCC3 /* MainMenuTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4877D21F54659F0039CCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4877DB1F54659F0039CCC3 /* SpellbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4877D81F54659F0039CCC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4877C11F54659E0039CCC3 /* Spellbook */;
+			targetProxy = CE4877D71F54659F0039CCC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE4877C91F54659F0039CCC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4877CA1F54659F0039CCC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4877CE1F54659F0039CCC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4877CF1F54659F0039CCC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBCBC801F73FC3B00B98884 /* NewSpellView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBCBC811F73FC3B00B98884 /* Base */,
+			);
+			name = NewSpellView.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBCBC871F7462A900B98884 /* TuroialView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBCBC881F7462A900B98884 /* Base */,
+			);
+			name = TuroialView.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4877DD1F54659F0039CCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE4877DE1F54659F0039CCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4877E01F54659F0039CCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502F9F12CFB0893E9A6D5BAE /* Pods-Spellbook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Spellbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.Spellbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE4877E11F54659F0039CCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED570C0B2E41616E0390F3F /* Pods-Spellbook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Spellbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.Spellbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CE4877E31F54659F0039CCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB0248A7DA3827CB75CF9B8 /* Pods-SpellbookTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpellbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.SpellbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spellbook.app/Spellbook";
+			};
+			name = Debug;
+		};
+		CE4877E41F54659F0039CCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F6AE2EBB9E2985600878F1 /* Pods-SpellbookTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpellbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Demetrio.SpellbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spellbook.app/Spellbook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4877BD1F54659E0039CCC3 /* Build configuration list for PBXProject "Spellbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4877DD1F54659F0039CCC3 /* Debug */,
+				CE4877DE1F54659F0039CCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4877DF1F54659F0039CCC3 /* Build configuration list for PBXNativeTarget "Spellbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4877E01F54659F0039CCC3 /* Debug */,
+				CE4877E11F54659F0039CCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4877E21F54659F0039CCC3 /* Build configuration list for PBXNativeTarget "SpellbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4877E31F54659F0039CCC3 /* Debug */,
+				CE4877E41F54659F0039CCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE4877BA1F54659E0039CCC3 /* Project object */;
+}
