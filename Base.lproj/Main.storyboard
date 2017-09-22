@@ -270,8 +270,11 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-3d-fey">
                                         <rect key="frame" x="0.0" y="44" width="326" height="30"/>
-                                        <color key="backgroundColor" red="0.86542278020379737" green="0.86026626533392347" blue="0.88141025641025639" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Save"/>
+                                        <color key="backgroundColor" red="0.1876572987" green="0.57128250840000006" blue="0.70349203019999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="SaveUser:" destination="uKT-5E-Ipo" eventType="touchUpInside" id="XDB-oj-1fa"/>
                                         </connections>
