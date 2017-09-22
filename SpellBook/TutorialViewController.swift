@@ -24,7 +24,7 @@ class TutorialViewController: UIViewController {
     @IBAction func okButton(_ sender: Any)
     {
         _ = navigationController?.popViewController(animated: true)
-         UserDefaults.standard.set(true, forKey: "hasFinishedTutorial")
+         UserDefaults.standard.set(false, forKey: "hasFinishedTutorial")
     }
 
 

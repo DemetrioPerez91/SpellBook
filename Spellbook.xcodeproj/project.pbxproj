@@ -10,9 +10,7 @@
 		5EDD7B05D6210BB9B1AD3C0F /* Pods_SpellbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230D49D82E0A6267AEEDBD1 /* Pods_SpellbookTests.framework */; };
 		772D81A4F12E3C4EA01F7EC8 /* Pods_Spellbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0769EECC85D824FC5AA32569 /* Pods_Spellbook.framework */; };
 		CE4877C61F54659F0039CCC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877C51F54659F0039CCC3 /* AppDelegate.swift */; };
-		CE4877CB1F54659F0039CCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4877C91F54659F0039CCC3 /* Main.storyboard */; };
 		CE4877CD1F54659F0039CCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4877CC1F54659F0039CCC3 /* Assets.xcassets */; };
-		CE4877D01F54659F0039CCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4877CE1F54659F0039CCC3 /* LaunchScreen.storyboard */; };
 		CE4877DB1F54659F0039CCC3 /* SpellbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877DA1F54659F0039CCC3 /* SpellbookTests.swift */; };
 		CE4877ED1F54CC770039CCC3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4877EC1F54CC770039CCC3 /* Enum.swift */; };
 		CE4877EF1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE4877EE1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg */; };
@@ -38,11 +36,13 @@
 		CE4878921F5B0C250039CCC3 /* CastSpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878911F5B0C250039CCC3 /* CastSpellViewController.swift */; };
 		CEBCBC7D1F73F56B00B98884 /* spellBook.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC7C1F73F56B00B98884 /* spellBook.png */; };
 		CEBCBC7F1F73F58E00B98884 /* spellBookIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC7E1F73F58E00B98884 /* spellBookIpad.png */; };
-		CEBCBC821F73FC3B00B98884 /* NewSpellView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC801F73FC3B00B98884 /* NewSpellView.storyboard */; };
 		CEBCBC861F74585600B98884 /* CastSpellView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC851F74585600B98884 /* CastSpellView.storyboard */; };
-		CEBCBC891F7462A900B98884 /* TuroialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC871F7462A900B98884 /* TuroialView.storyboard */; };
 		CEBCBC8B1F74658900B98884 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCBC8A1F74658900B98884 /* TutorialViewController.swift */; };
 		CEBCBC8E1F748F9300B98884 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCBC8D1F748F9300B98884 /* Toast.swift */; };
+		CEBCBC901F74974B00B98884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC8F1F74974B00B98884 /* LaunchScreen.storyboard */; };
+		CEBCBC921F74975A00B98884 /* NewSpellView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC911F74975A00B98884 /* NewSpellView.storyboard */; };
+		CEBCBC941F74976600B98884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC931F74976600B98884 /* Main.storyboard */; };
+		CEBCBC961F74977200B98884 /* TuroialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCBC951F74977200B98884 /* TuroialView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +78,7 @@
 		6ED570C0B2E41616E0390F3F /* Pods-Spellbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spellbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spellbook/Pods-Spellbook.release.xcconfig"; sourceTree = "<group>"; };
 		CE4877C21F54659E0039CCC3 /* Spellbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spellbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4877C51F54659F0039CCC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE4877CA1F54659F0039CCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE4877CC1F54659F0039CCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE4877CF1F54659F0039CCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4877D11F54659F0039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4877D61F54659F0039CCC3 /* SpellbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4877DA1F54659F0039CCC3 /* SpellbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellbookTests.swift; sourceTree = "<group>"; };
@@ -107,11 +105,13 @@
 		CE4878911F5B0C250039CCC3 /* CastSpellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastSpellViewController.swift; sourceTree = "<group>"; };
 		CEBCBC7C1F73F56B00B98884 /* spellBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellBook.png; sourceTree = "<group>"; };
 		CEBCBC7E1F73F58E00B98884 /* spellBookIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellBookIpad.png; sourceTree = "<group>"; };
-		CEBCBC811F73FC3B00B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewSpellView.storyboard; sourceTree = "<group>"; };
 		CEBCBC851F74585600B98884 /* CastSpellView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CastSpellView.storyboard; sourceTree = "<group>"; };
-		CEBCBC881F7462A900B98884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TuroialView.storyboard; sourceTree = "<group>"; };
 		CEBCBC8A1F74658900B98884 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CEBCBC8D1F748F9300B98884 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		CEBCBC8F1F74974B00B98884 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SpellBook/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		CEBCBC911F74975A00B98884 /* NewSpellView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewSpellView.storyboard; path = SpellBook/NewSpellView.storyboard; sourceTree = SOURCE_ROOT; };
+		CEBCBC931F74976600B98884 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = SpellBook/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CEBCBC951F74977200B98884 /* TuroialView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TuroialView.storyboard; path = SpellBook/TuroialView.storyboard; sourceTree = SOURCE_ROOT; };
 		E230D49D82E0A6267AEEDBD1 /* Pods_SpellbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -260,12 +260,12 @@
 		CE48781A1F599B910039CCC3 /* xib */ = {
 			isa = PBXGroup;
 			children = (
-				CE4877C91F54659F0039CCC3 /* Main.storyboard */,
-				CEBCBC871F7462A900B98884 /* TuroialView.storyboard */,
+				CEBCBC931F74976600B98884 /* Main.storyboard */,
+				CEBCBC951F74977200B98884 /* TuroialView.storyboard */,
 				CEBCBC851F74585600B98884 /* CastSpellView.storyboard */,
-				CEBCBC801F73FC3B00B98884 /* NewSpellView.storyboard */,
+				CEBCBC911F74975A00B98884 /* NewSpellView.storyboard */,
 				CE4878171F599B7E0039CCC3 /* SpellTableViewCell.xib */,
-				CE4877CE1F54659F0039CCC3 /* LaunchScreen.storyboard */,
+				CEBCBC8F1F74974B00B98884 /* LaunchScreen.storyboard */,
 			);
 			name = xib;
 			sourceTree = "<group>";
@@ -379,17 +379,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBCBC821F73FC3B00B98884 /* NewSpellView.storyboard in Resources */,
 				CE48788D1F5B037E0039CCC3 /* Papyrus.jpg in Resources */,
-				CEBCBC891F7462A900B98884 /* TuroialView.storyboard in Resources */,
-				CE4877D01F54659F0039CCC3 /* LaunchScreen.storyboard in Resources */,
+				CEBCBC921F74975A00B98884 /* NewSpellView.storyboard in Resources */,
+				CEBCBC941F74976600B98884 /* Main.storyboard in Resources */,
 				CE4878191F599B7E0039CCC3 /* SpellTableViewCell.xib in Resources */,
 				CEBCBC7D1F73F56B00B98884 /* spellBook.png in Resources */,
 				CEBCBC861F74585600B98884 /* CastSpellView.storyboard in Resources */,
 				CE4877CD1F54659F0039CCC3 /* Assets.xcassets in Resources */,
+				CEBCBC961F74977200B98884 /* TuroialView.storyboard in Resources */,
 				CEBCBC7F1F73F58E00B98884 /* spellBookIpad.png in Resources */,
+				CEBCBC901F74974B00B98884 /* LaunchScreen.storyboard in Resources */,
 				CE4877EF1F54D9240039CCC3 /* gray-brick-background-bricks-as-wall-40204307.jpg in Resources */,
-				CE4877CB1F54659F0039CCC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,41 +538,6 @@
 			targetProxy = CE4877D71F54659F0039CCC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CE4877C91F54659F0039CCC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE4877CA1F54659F0039CCC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE4877CE1F54659F0039CCC3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE4877CF1F54659F0039CCC3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CEBCBC801F73FC3B00B98884 /* NewSpellView.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEBCBC811F73FC3B00B98884 /* Base */,
-			);
-			name = NewSpellView.storyboard;
-			sourceTree = "<group>";
-		};
-		CEBCBC871F7462A900B98884 /* TuroialView.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEBCBC881F7462A900B98884 /* Base */,
-			);
-			name = TuroialView.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE4877DD1F54659F0039CCC3 /* Debug */ = {
